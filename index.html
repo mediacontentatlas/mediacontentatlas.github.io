@@ -162,10 +162,23 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Background</h2>
+        <h2 class="title is-3">Background: The Problem</h2>
         <div class="content has-text-justified">
           <p>
-            Add problem/background.
+            People spend <strong>over eight hours a day</strong> on screens, making digital media a central part of our lives. 
+            Yet, most research still relies on <strong>traditional screen-use metrics</strong>—such as <strong>time spent per app</strong>—which fail to capture:
+          </p>
+          <ul>
+            <li>📱 <strong>What users actually see:</strong> an Instagram screen about makeup tutorials is classified the same as one involving cyberbullying or harassment—even though their psychological and social impacts are vastly different.</li>
+            <li>🔄 <strong>How content flows across apps:</strong> Switching between platforms (e.g., reading news, then watching a related video) is not captured.</li>
+            <li>📊 <strong>Thematic insights:</strong> Studies rely on <strong>app categories</strong>, which are rigid and often irrelevant to user experiences.</li>
+          </ul>
+          <p>
+            To address this, <strong>continuous screen data collection</strong> has emerged, capturing everything displayed on users' screens. However, media experiences are <strong>infinitely describable</strong>—the same dataset can hold vastly different meanings depending on the researcher’s perspective and research questions.  
+           </p>
+           <p>
+            Despite this richness, <strong>there are no scalable tools</strong> that allow researchers to <strong>interact with, explore, and analyze</strong> these vast digital experiences.  
+            Working with such <strong>massive, sensitive, and unstructured multimodal data</strong> remains an overwhelming challenge.
           </p>
         </div>
       </div>
@@ -178,13 +191,27 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Data</h2>
+        <h2 class="title is-3">Data: Capturing Media Content Beyond App Names</h2>
         <div class="container is-max-desktop">
-          <div class="hero-body">
+        <div class="content has-text-justified">
+          <p>
+            To design and evaluate Media Content Atlas, we used <strong>1.12 million screens</strong> (10,000 screenshots per participant) collected from <strong>112 participants</strong>  over the course of <strong></strong>one month</strong>.  
+            This data comes from the <span><a href="https://screenomics.stanford.edu">Human Screenome Project</a></span>, where a study-specific app captured a screenshot <strong>every 5 seconds</strong> whenever the screen was on, creating a continuous, moment-by-moment record of digital experiences.
+          </p>
+          <p>
+            Manually reviewing this dataset would be nearly impossible—a researcher would need to spend <strong>over 190 continuous 8-hour workdays</strong> just to view each screen for 5 seconds.  
+            The sheer scale and complexity of this data make <strong>AI-augmented exploration and analysis essential</strong>.
+          </p>
+          <div class="content has-text-centered">
             <img src="static/videos/screenome.gif" alt="Media Content Atlas GIF" style="max-width: 100%; height: auto;">
-            <h2 class="subtitle has-text-centered">
-              We use data from Human Screenome Project...
-            </h2>
+            <p class="caption-text"><strong>Figure.</strong> Example of MCA's input data.
+            </p>
+          </div>
+            <p>
+              In the video above, you can see a 15-minute segment from one participant’s digital life, demonstrating how media experiences unfold in different content in real-time.
+            </p>
+          </div>
+          </div>   
           </div>
         </div>
       </div>
@@ -197,7 +224,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths has-text-centered">
-        <h2 class="title is-3">The MCA Pipeline</h2>
+        <h2 class="title is-3">Media Content Atlas Pipeline</h2>
         
         <!-- Large Figure -->
         <figure>
@@ -228,6 +255,7 @@
                 <li><strong>Description Accuracy:</strong> 83% of AI-generated content descriptions were considered <em>accurate or highly accurate</em>.</li>
                 <strong>Content Similarity:</strong> 89% of images within clusters were deemed <em>similar or highly similar</em>, confirming MCA's effectiveness in grouping related content.</li>
                 <li><strong>Image Retrieval Performance:</strong> 79.5% of retrieved images were rated <em>relevant or highly relevant</em> to search queries.</li>
+                <li><strong>Comparison with Traditional Groupings:</strong> Experts unanimously rated MCA as <em>more informative, descriptive, and useful</em> for their research compared to traditional app-based and app-category-based groupings.</li>
               </ul>
             </p>
           </div>
@@ -235,7 +263,7 @@
           <div class="column is-half has-text-centered">
             <figure>
               <img src="static/images/allfigures.png" alt="Expert Ratings on the Clusters" style="max-width: 100%; height: auto;">
-              <p style="font-size: 0.5em;"></p><p><strong>Figure.</strong> The bar plots on the left represent the count of responses for each randomly selected cluster, with varying bar lengths indicating the number of responses and colors representing different slider values. The boxplots with scatter points on the right illustrate the distribution of scores provided by each of the four experts for images within the five cluster topics.</p>
+              <p class="caption-text"><strong>Figure.</strong> The bar plots on the left represent the count of responses for each randomly selected cluster, with varying bar lengths indicating the number of responses and colors representing different slider values. The boxplots with scatter points on the right illustrate the distribution of scores provided by each of the four experts for images within the five cluster topics.</p>
             </figure>
           </div>
         </div>   
@@ -243,9 +271,8 @@
         <div class="has-text-centered">
           <figure>
             <img src="static/images/figure5.png" alt="Expert Ratings on the Image Retrieval" style="max-width: 100%; height: auto;">
-            <figcaption class="has-text-justified">
-              <p style="font-size: 0.85em;"></p><p><strong>Figure.</strong> Mean expert ratings for each query, comparing CLIP (green bars) and Llava-OneVision+GTE-Large (purple bars). Higher bars indicate higher relevance scores. Queries are arranged from concrete (e.g., cat) to abstract (e.g., depression). </p>
-            </figcaption>
+            <p class="caption-text"><strong>Figure.</strong> Mean expert ratings for each query, comparing CLIP (green bars) and Llava-OneVision+GTE-Large (purple bars). Higher bars indicate higher relevance scores. Queries are arranged from concrete (e.g., cat) to abstract (e.g., depression).
+            </p>
           </figure>
         </div>
 
@@ -253,21 +280,42 @@
     </div>
   </div>
 </section>
-
 <!-- End section -->
- <!-- Next Steps Evaluation -->
+
+<!-- Key Takeaways & Future Work -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
-      <div class="column is-four-fifths has-text-centered">
-        <h2 class="title is-3">Implications</h2>
-        
-        add bullet points
-
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Key Takeaways & Future Work</h2>  
+        <div class="content has-text-justified">
+          <p>
+            As digital media shapes our behaviors, culture, and decisions, capturing and studying these experiences is more critical than ever.  
+            This study introduced the <strong>Media Content Atlas (MCA)</strong>—a first-of-its-kind pipeline for studying <strong>large-scale, high-complexity screen data</strong> using multimodal LLMs.  
+          </p>
+          <p>
+            MCA moves beyond <strong>traditional screen-use metrics</strong>, enabling researchers to:
+          </p>
+          <ul>
+            <li>📊 <strong>Analyze moment-by-moment screen content</strong></li>
+            <li>🔍 <strong>Cluster media based on meaning</strong></li>
+            <li>📑 <strong>Conduct topic modeling and labeling</strong></li>
+            <li>🖼️ <strong>Retrieve images from theoretical queries</strong></li>
+            <li>🎛️ <strong>Explore multi-perspective visualizations</strong></li>
+          </ul>
+          <p>
+            Unlike traditional approaches, <strong>MCA requires no manual annotation</strong> while <strong>safeguarding sensitive data</strong>, allowing researchers to study digital media at scale efficiently and securely.
+          </p>
+          <p>
+            <strong>Our Next Steps:</strong> Future work will use semi-supervised validation methods, where researchers refine AI-generated clusters.  
+            Additional modular views (e.g., outcome-based, longitudinal) will further enhance MCA’s flexibility across research contexts.
+          </p>
+        </div>
       </div>
     </div>
   </div>
 </section>
+
 <!-- End section -->
 
 <!-- Contact Section -->
