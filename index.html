@@ -131,16 +131,27 @@
         <source src="static/videos/MCAshort.mp4"
         type="video/mp4">
       </video>
-      <h2 class="subtitle has-text-centered">
-        <strong>How can researchers study complex, real-world digital media experiences at scale?</strong>
-      </h2>
+      <div class="box has-background-info-light has-text-centered mt-5 mb-5">
+        <h2 class="title is-4 mb-0">
+          <strong>How can researchers study complex, real-world digital media experiences at scale?</strong>
+        </h2>
+      </div>
       <p class="has-text-justified">
-        We introduce the <strong>Media Content Atlas (MCA)</strong>—a customizable AI-powered pipeline and interactive dashboard augments inductive inquiry on digital media content across platforms.  
-        Each point in the dashboard represents a single captured screen—a snapshot of what a participant sees and interacts with on their smartphone. 
-        This data comes from <strong>1.12 million screenshots</strong> collected from <strong>112 participants</strong> over <strong>one month</strong>, 
-        recorded every <strong>5 seconds</strong> whenever their screen was on.        Colors indicate media content topics, <strong>automatically identified by MCA’s AI-driven pipeline.</strong>
+        We introduce the <strong>Media Content Atlas (MCA)</strong>—a <strong>customizable, AI-powered pipeline and interactive dashboard</strong> for studying digital media content across platforms at scale.  
+  Each point in the dashboard represents a <strong>single captured screen</strong>—a moment of what a participant sees and interacts with on their smartphone. 
+  This data comes from <strong>1.12 million screenshots</strong> collected from <strong>112 participants</strong> over the course of <strong>one month</strong>, 
+  sampled every <strong>5 seconds</strong> while screens were on. Topics are color-coded and <strong>automatically identified</strong> by MCA’s AI-driven pipeline.
       </p>
-    </div>
+      <div class="box has-background-light mt-5 mb-5">
+        <p class="is-size-5 has-text-weight-semibold mb-3">🧭 Media Content Atlas enables researchers to:</p>
+        <ul class="ml-4">
+          <li>📊 <strong>Capture and analyze</strong> moment-by-moment screen content</li>
+          <li>🔍 <strong>Cluster</strong> media by semantic and visual similarity</li>
+          <li>📑 <strong>Automate</strong> topic modeling and labeling</li>
+          <li>🖼️ <strong>Retrieve</strong> content from theoretical or conceptual queries</li>
+          <li>🎛️ <strong>Visualize and explore</strong> media landscapes interactively</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
@@ -151,23 +162,38 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Why MCA? The Problem with Traditional Approaches</h2>
+        <h2 class="title is-3">The Problem with Traditional Approaches</h2>
         <div class="content has-text-justified">
+          
           <p>
-            People spend <strong>over 8 hours a day on screens</strong>, yet research still relies on <strong>app-based metrics</strong> 
-            like <strong>time spent per app</strong>, which fail to capture:
+            Screens are deeply embedded in how we live, learn, and connect—yet research often reduces digital experience to <strong>app-based metrics</strong> like <strong>time spent per app</strong>.
           </p>
-          <ul>
-            <li>📱 <strong>What users actually see:</strong> An Instagram feed of makeup tutorials vs. cyberbullying is treated the same, despite vastly different impacts.</li>
-            <li>🔄 <strong>How content flows across apps:</strong> Users switch between platforms for related content (e.g., reading news, then watching a follow-up video), but this cross-platform flow is lost.</li>
-            <li>📊 <strong>Thematic insights:</strong> App categories are rigid and don’t reflect actual user experiences.</li>
-          </ul>
+
+          <div class="box has-background-warning-light">
+            <p class="is-size-5 has-text-weight-semibold mb-3"> What App-Based Metrics Miss:</p>
+
+            <p>
+              <strong>📱 What users actually see:</strong> An Instagram feed of makeup tutorials vs. cyberbullying is treated the same, despite vastly different impacts.
+            </p>
+
+            <p>
+              <strong>🔄 How content flows across apps:</strong> Users switch between platforms for related content (e.g., reading news, then watching a follow-up video), but this cross-platform flow is lost.
+            </p>
+
+            <p>
+              <strong>🌱 Emergent behaviors:</strong> App categories are rigid and predefined. They don’t adapt to the diverse ways users engage with content—or how those behaviors evolve over time.
+            </p>
+          </div>
+
           <p>
-            To address this, recent research uses <strong>continuous screen data collection</strong> captures <strong>everything displayed on users' screens</strong>.
-           </p>
-           <p>
-            Despite this, <strong>there are no scalable and flexible tools</strong> that allow researchers to <strong>interact with, explore, and analyze such massive, sensitive, and unstructured multimodal data</strong>.
+            To address these blind spots, recent research has turned to <strong>continuous screen data collection</strong>, which captures <strong>everything displayed on users' screens</strong>.
           </p>
+
+          <div class="box has-background-light mt-4">
+            <p>
+              Despite these advances, <strong>there are still no scalable and flexible tools</strong> that allow researchers to <strong>interact with, explore, and analyze massive, sensitive, and unstructured multimodal data</strong>.
+            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -179,24 +205,24 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3">Beyond App Names: Capturing Media Content Beyond App Names</h2>
+        <h2 class="title is-3">Beyond App Names: Capturing Media Content via Screenomics</h2>
         <div class="container is-max-desktop">
         <div class="content has-text-justified">
           <p>
             To design and evaluate Media Content Atlas, we used <strong>1.12 million screens</strong> (10,000 screenshots per participant) collected from <strong>112 participants</strong>  over the course of <strong></strong>one month</strong>.  
-            This data comes from the <span><a href="https://screenomics.stanford.edu">Human Screenome Project</a></span>, where a study-specific app captured a screenshot <strong>every 5 seconds</strong> whenever the screen was on, creating a continuous, moment-by-moment record of digital experiences.
+            This data comes from the <span><a href="https://screenomics.stanford.edu">Human Screenome Project</a></span>, where a study-specific app captured a screenshot <strong>every 5 seconds</strong> whenever the screen was on, <strong>creating a continuous, moment-by-moment record of digital experiences</strong>.
           </p>
-          <p>
-            🔎 <strong>The Scale Challenge:</strong> Manually reviewing this dataset would take 190+ workdays, making AI-augmented exploration and analysis essential.
-          </p>
-          <div class="content has-text-centered">
-            <img src="static/videos/screenome.gif" alt="Media Content Atlas GIF" style="max-width: 100%; height: auto;">
-            <p class="caption-text"><strong>Figure.</strong> Example of MCA's input data.
+          <div class="box has-background-light mt-4 mb-4 has-text-left">
+            <h3 class="title is-5 mb-2">🔎 The Scale Challenge</h3>
+            <p>
+              Manually reviewing this dataset would take <strong>190+ workdays</strong>, <strong>making AI-augmented exploration and analysis essential</strong>.
             </p>
           </div>
-            <p>
-              The video above shows a 15-minute segment from one participant’s digital life, demonstrating how media experiences unfold in different content in real-time.
+          <div class="content has-text-centered">
+            <img src="static/videos/screenome.gif" alt="Media Content Atlas GIF" style="max-width: 100%; height: auto;">
+            <p class="caption-text"><strong>Figure.</strong> A short slice of a Screenome. This 15-minute segment, recorded from a consenting researcher’s real-world smartphone use, illustrates how digital content and media experiences shift even over brief periods of time. Colors indicate different app categories, while the size of each bar represents the amount of time spent on each app category.</p>
             </p>
+          </div>
           </div>
           </div>   
           </div>
@@ -206,100 +232,59 @@
   </div>
 </section>
 <!-- End paper Data -->
-<!-- Figures Section -->
+<script>
+  window.addEventListener("scroll", () => {
+    const appList = document.getElementById("appNames");
+    const contentList = document.getElementById("contentTopics");
+    const scrollY = window.scrollY;
+
+    if (scrollY > 300) {
+      appList.style.opacity = 0;
+      appList.style.transform = "translateX(-20px)";
+      contentList.style.opacity = 1;
+      contentList.style.transform = "translateX(0)";
+    } else {
+      appList.style.opacity = 1;
+      appList.style.transform = "translateX(0)";
+      contentList.style.opacity = 0;
+      contentList.style.transform = "translateX(-20px)";
+    }
+  });
+</script>
+
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths has-text-centered">
         <h2 class="title is-3">Media Content Atlas Pipeline</h2>
-        
-        <!-- Large Figure -->
-        <figure>
-          <img src="static/images/mca-pipeline2.png" alt="Media Content Atlas Pipeline Overview">
-          <div class="content has-text-justified">
-            <p>MCA processes screen data <strong>scalably and securely</strong> through the following steps:</p>
-            <ul>
-              <li>1️⃣ <strong>Embedding & Description Generation</strong> – Converts images into numerical representations and text descriptions.</li>
-              <li>2️⃣ <strong>Clustering & Topic Modeling</strong> – Organizes content into meaningful, interpretable topics.</li>
-              <li>3️⃣ <strong>Image Retrieval</strong> – Enables semantic search for specific media content.</li>
-              <li>4️⃣ <strong>Interactive Visualization</strong> – Facilitates dynamic exploration of digital experiences.</li>
-            </ul>
-          
-            <p>
-              Built on <strong>open-source multimodal models</strong> (e.g., CLIP, LLaVA-One Vision), MCA requires <strong>no manual annotation</strong> and ensures <strong>data security</strong> by running on in-house servers.  
-              Its <strong>model-agnostic architecture</strong> allows customization via <strong>prompting and fine-tuning</strong>.
-            </p>
-        </figure>
 
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Figures Section -->
-<!-- Expert Evaluation -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3 has-text-centered">Expert Evaluation & Findings</h2>
-        <!-- Two-column layout for Clusters -->
-        <div class="columns is-vcentered">
-          <!-- Left Column (Text) -->
-          <div class="column is-half">
-            <p class="content has-text-justified">
-              To assess MCA’s effectiveness, we conducted an evaluation with domain experts from 
-              communication, psychology, medicine, and education. Through <strong>think-aloud sessions</strong> and 
-              <strong>structured ratings</strong> (three hours per expert), they assessed MCA’s clustering, topic labeling, 
-              and retrieval capabilities.<ul>
-                <li>✅ <strong>Cluster Relevance:</strong> <strong>96%</strong> of topic labels were rated <strong>relevant/highly relevant</strong>.</li>
-                <li>✅ <strong>Description Accuracy:</strong> <strong>83%</strong> of AI-generated descriptions were <strong>accurate/highly accurate</strong>.</li>
-                <li>✅ <strong>Content Similarity:</strong> <strong>89%</strong> of clustered images were considered <strong>semantically similar</strong>.</li>
-                <li>✅ <strong>Image Retrieval Performance:</strong> <strong>79.5%</strong> of retrieved images highly matched <strong>search intent</strong>.</li>
-                <li>✅ <strong>Comparison with Traditional Methods:</strong> Experts unanimously found MCA <strong>more informative and useful</strong> than app-based categorization.</li>
-              </ul>
-            </p>
-          </div>
-          <!-- Right Column (Figure) -->
-          <div class="column is-half has-text-centered">
-            <figure>
-              <img src="static/images/allfigures.png" alt="Expert Ratings on the Clusters" style="max-width: 100%; height: auto;">
-              <p class="caption-text"><strong>Figure.</strong> The bar plots on the left represent the count of responses for each randomly selected cluster, with varying bar lengths indicating the number of responses and colors representing different slider values. The boxplots with scatter points on the right illustrate the distribution of scores provided by each of the four experts for images within the five cluster topics.</p>
-            </figure>
-          </div>
-        </div>   
-        <!-- Full-width figure for Image Retrieval -->
-        <div class="has-text-centered">
-          <figure>
-            <img src="static/images/figure5.png" alt="Expert Ratings on the Image Retrieval" style="max-width: 100%; height: auto;">
-            <p class="caption-text"><strong>Figure.</strong> Mean expert ratings for each query, comparing CLIP (green bars) and Llava-OneVision+GTE-Large (purple bars). Higher bars indicate higher relevance scores. Queries are arranged from concrete (e.g., cat) to abstract (e.g., depression).
-            </p>
-          </figure>
+        <div class="content has-text-justified mt-4">
+          <p>
+            MCA processes screen data <strong>scalably and securely</strong> through a four-step pipeline: embedding, clustering, retrieval, and interactive visualization. These steps allow researchers to <strong>transform raw screen data into structured, searchable, and explorable insights</strong>.
+          </p>
+          
         </div>
 
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End section -->
+        <!-- MCA Pipeline Figure -->
+        <div style="max-width: 720px; margin: 0rem auto;">
+          <div style="box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); border-radius: 8px; padding: 1rem;">
+            <figure class="has-text-centered">
+              <img 
+                src="static/images/mca-pipeline2.png" 
+                alt="Media Content Atlas Pipeline Overview" 
+                style="max-width: 100%; height: auto; border-radius: 6px;">
+              <p class="caption-text is-size-7 mt-3">
+                <strong>Figure.</strong> MCA's end-to-end pipeline includes embedding and description generation, clustering and topic modeling, semantic image retrieval, and interactive visualization of media content.
+              </p>
+            </figure>
+          </div>
+        </div>
 
-<!-- Key Takeaways -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3 has-text-centered">Key Takeaways</h2>  
-        <div class="content has-text-justified">   
-          <ul>
-            <li>📊 <strong>Capture and Analyze</strong> moment-by-moment screen content</li>
-            <li>🔍 <strong>Cluster</strong> media based on meaning</li>
-            <li>📑 <strong>Automate</strong> topic modeling & labeling</li>
-            <li>🖼️ <strong>Retrieve</strong> images from theoretical queries</li>
-            <li>🎛️ <strong>Explore</strong> media landscapes dynamically</li>
-          </ul>  
+
+        <div class="content has-text-justified mt-4">
           <p>
-            MCA redefines how researchers study digital media at scale. Unlike traditional methods, it requires 
-            <strong>no manual annotation</strong>, safeguards <strong>sensitive data</strong>, and enables scalable, AI-powered 
-            exploration of media experiences.
+            Built on <strong>open-source multimodal models</strong> (e.g., CLIP, LLaVA-One Vision), MCA requires <strong>no manual annotation</strong> and ensures <strong>data security</strong> by running on in-house servers.  
+            Its <strong>model-agnostic architecture</strong> allows flexible customization via <strong>prompting and fine-tuning</strong>.
           </p>
         </div>
       </div>
@@ -307,17 +292,82 @@
   </div>
 </section>
 
-<!-- End section -->
 
+<!-- Expert Evaluation -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Expert Evaluation & Findings</h2>
+
+        <div class="columns is-vcentered">
+          <!-- Left Column (Text) -->
+          <div class="column is-half">
+            <div class="content has-text-justified">
+
+              <p>
+                We conducted a structured evaluation of MCA with domain experts in communication, psychology, medicine, and education. 
+                Each expert participated in <strong>think-aloud sessions</strong> and <strong>three hours of structured ratings</strong>, evaluating MCA’s clustering, topic labeling, and retrieval features.
+              </p>
+            </div>
+              <!-- Evaluation Results -->
+              <div class="box has-background-light">
+                <p class="is-size-5 has-text-weight-semibold mb-3">✅ Key Evaluation Outcomes</p>
+                <ul>
+                  <li class="mb-2"><strong>Cluster Relevance:</strong> <strong>96%</strong> of topic labels were rated <em>relevant/highly relevant</em>.</li>
+                  <li class="mb-2"><strong>Description Accuracy:</strong> <strong>83%</strong> of AI-generated descriptions were rated <em>accurate/highly accurate</em>.</li>
+                  <li class="mb-2"><strong>Content Similarity:</strong> <strong>89%</strong> of clustered images were considered <em>semantically similar</em>.</li>
+                  <li class="mb-2"><strong>Image Retrieval Performance:</strong> <strong>79.5%</strong> of retrieved images matched the <em>intended search concept</em>.</li>
+                  <li><strong>Comparison with Traditional Methods:</strong> Experts unanimously found MCA <em>more informative and useful</em> than app-based categorization.</li>
+                </ul>
+              </div>
+          </div>
+
+          <!-- Right Column (Figure) -->
+          <div class="column is-half has-text-centered">
+          <div style="max-width: 360px; margin: 2rem auto;">
+            <div style="box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); border-radius: 8px; padding: 1rem;">
+              <figure class="has-text-centered">
+                <img src="static/images/allfigures.png" alt="Expert Ratings on MCA Clusters" style="max-width: 100%; height: auto;">
+                <p class="caption-text is-size-7 mt-3">
+                  <strong>Figure.</strong> <em>Expert ratings on cluster interpretability and relevance.</em> Bar plots (left) show label-level response counts. Boxplots (right) illustrate score distributions across clusters and domains.
+                </p>
+              </figure>
+            </div>
+          </div>
+        </div>
+        </div>
+        <!-- Full-width figure for Image Retrieval -->
+        <div style="max-width: 720px; margin: 0rem auto;">
+          <div style="box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); border-radius: 8px; padding: 1rem;">
+            <figure class="has-text-centered">
+              <img 
+                src="static/images/figure5.png" 
+                alt="Expert Ratings on the Image Retrieval" 
+                style="max-width: 100%; height: auto; border-radius: 6px;">
+              <p class="caption-text is-size-7 mt-3">
+                <strong>Figure.</strong> <em>Expert evaluation of image retrieval performance.</em> Experts rated the relevance of retrieved images to the intended search concept.
+              </p>
+            </figure>
+          </div>
+        </div>
+
+          </div>
+        </div>
+      </div>
+</section>
+<div class="section-divider">
+  <img src="static/images/divider.png" alt="Color divider" style="width: 100%; height: 8px; max-width: 1800; margin: 0rem auto; display: block;">
+</div>
 <!-- Contact Section -->
-<section class="section has-text-centered">
+<section class="section has-text-centered has-background-light">
   <div class="container">
     <h2 class="title is-3">Get in Touch</h2>
-    <p class="is-size-5">
-      Have questions or want to collaborate? Feel free to reach out!
+    <p class="is-size-5 mb-4">
+      Have questions, ideas, or want to collaborate? Let’s connect.
     </p>
-    <br>
-    <a href="mailto:mervecer@stanford.edu" class="button is-dark is-medium">
+
+    <a href="mailto:mervecer@stanford.edu" class="button is-info is-medium">
       <span class="icon">
         <i class="fas fa-envelope"></i>
       </span>
@@ -325,7 +375,9 @@
     </a>
   </div>
 </section>
-
+<div class="section-divider">
+  <img src="static/images/divider.png" alt="Color divider" style="width: 100%; height: 8px; max-width: 1800; margin: 0rem auto; display: block;">
+</div>
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
