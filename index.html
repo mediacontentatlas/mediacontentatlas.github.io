@@ -43,8 +43,6 @@
   <script src="static/js/index.js"></script>
 </head>
 <body>
-
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
@@ -160,23 +158,23 @@
 <!-- Paper Background -->
 <section class="section">
   <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
+    <div class="columns is-centered has-text-centered">  
+    <div class="column is-four-fifths">
         <h2 class="title is-3">The Problem with Traditional Approaches</h2>
+        <div class="container is-max-desktop">
         <div class="content has-text-justified">
-          
           <p>
             Screens are deeply embedded in how we live, learn, and connect—yet research often reduces digital experience to <strong>app-based metrics</strong> like <strong>time spent per app</strong>.
           </p>
-
+          </div>
+          <div class="content has-text-left">
           <div class="box has-background-warning-light">
             <p class="is-size-5 has-text-weight-semibold mb-3"> What App-Based Metrics Miss:</p>
-
-            <p>
-              <strong>📱 What users actually see:</strong> An Instagram feed of makeup tutorials vs. cyberbullying is treated the same, despite vastly different impacts.
+            <p class="mb-4">
+              <strong>📱 What users actually see:</strong> An Instagram feed of makeup tutorials vs. cyberbullying is treated the same, despite vastly different effects.
             </p>
 
-            <p>
+            <p class="mb-4">
               <strong>🔄 How content flows across apps:</strong> Users switch between platforms for related content (e.g., reading news, then watching a follow-up video), but this cross-platform flow is lost.
             </p>
 
@@ -184,18 +182,18 @@
               <strong>🌱 Emergent behaviors:</strong> App categories are rigid and predefined. They don’t adapt to the diverse ways users engage with content—or how those behaviors evolve over time.
             </p>
           </div>
-
+        </div>
+        <div class="content has-text-justified">
           <p>
             To address these blind spots, recent research has turned to <strong>continuous screen data collection</strong>, which captures <strong>everything displayed on users' screens</strong>.
           </p>
-
           <div class="box has-background-light mt-4">
             <p>
               Despite these advances, <strong>there are still no scalable and flexible tools</strong> that allow researchers to <strong>interact with, explore, and analyze massive, sensitive, and unstructured multimodal data</strong>.
             </p>
           </div>
+          </div>
         </div>
-      </div>
     </div>
   </div>
 </section>
@@ -212,6 +210,7 @@
             To design and evaluate Media Content Atlas, we used <strong>1.12 million screens</strong> (10,000 screenshots per participant) collected from <strong>112 participants</strong>  over the course of <strong></strong>one month</strong>.  
             This data comes from the <span><a href="https://screenomics.stanford.edu">Human Screenome Project</a></span>, where a study-specific app captured a screenshot <strong>every 5 seconds</strong> whenever the screen was on, <strong>creating a continuous, moment-by-moment record of digital experiences</strong>.
           </p>
+          </div>
           <div class="box has-background-light mt-4 mb-4 has-text-left">
             <h3 class="title is-5 mb-2">🔎 The Scale Challenge</h3>
             <p>
@@ -224,7 +223,6 @@
             </p>
           </div>
           </div>
-          </div>   
           </div>
         </div>
       </div>
@@ -356,18 +354,16 @@
         </div>
       </div>
 </section>
-<div class="section-divider">
-  <img src="static/images/divider.png" alt="Color divider" style="width: 100%; height: 8px; max-width: 1800; margin: 0rem auto; display: block;">
-</div>
+
 <!-- Contact Section -->
 <section class="section has-text-centered has-background-light">
   <div class="container">
-    <h2 class="title is-3">Get in Touch</h2>
-    <p class="is-size-5 mb-4">
+    <h2 class="title is-4">Get in Touch</h2>
+    <p class="is-size6 mb-4">
       Have questions, ideas, or want to collaborate? Let’s connect.
     </p>
 
-    <a href="mailto:mervecer@stanford.edu" class="button is-info is-medium">
+    <a href="mailto:mervecer@stanford.edu" class="button is-info is-small">
       <span class="icon">
         <i class="fas fa-envelope"></i>
       </span>
@@ -375,9 +371,7 @@
     </a>
   </div>
 </section>
-<div class="section-divider">
-  <img src="static/images/divider.png" alt="Color divider" style="width: 100%; height: 8px; max-width: 1800; margin: 0rem auto; display: block;">
-</div>
+
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
@@ -399,17 +393,34 @@
 </section>
 <!--End BibTex citation -->
 
-
-  <footer class="footer">
+<div class="section-divider">
+  <img src="static/images/divider.png" alt="Color divider" style="width: 100%; height: 8px; max-width: 1800; margin: 0rem auto; display: block;">
+</div>
+<footer class="footer has-background-light">
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-8">
-        <div class="content">
+        <div class="content has-text-centered">
 
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
+          <p class="is-size-6 mb-3"><strong>Learn more about Media Content Atlas.</strong></p>
+          <div class="buttons is-centered">
+            <a href="https://arxiv.org/pdf/<ARXIV_PAPER_ID>.pdf" target="_blank" class="button is-dark is-small">
+              <span class="icon"><i class="fas fa-file-pdf"></i></span>
+              <span>CHI 2025 Paper</span>
+            </a>
+            <a href="https://github.com/mediacontentatlas/mediacontentatlas" target="_blank" class="button is-dark is-small">
+              <span class="icon"><i class="fab fa-github"></i></span>
+              <span>Code</span>
+            </a>
+            <a href="https://arxiv.org/abs/<ARXIV_PAPER_ID>" target="_blank" class="button is-dark is-small">
+              <span class="icon"><i class="ai ai-arxiv"></i></span>
+              <span>arXiv</span>
+            </a>
+          </div>
+
+          <p class="is-size-7 mt-4">
+            This page is based on the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.<br>
+            Licensed under <a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a>.
           </p>
 
         </div>
@@ -417,32 +428,5 @@
     </div>
   </div>
 </footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-<!-- Floating Button: Read the Paper -->
-<a href="https://arxiv.org/pdf/<ARXIV_PAPER_ID>.pdf" 
-  target="_blank" 
-  class="button is-info is-medium"
-  style="
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 999;
-    border-radius: 50px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  ">
- <span class="icon">
-   <i class="fas fa-file-pdf"></i>
- </span>
- <span>Read the Paper</span>
-</a>
-
 </body>
 </html>
