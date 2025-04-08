@@ -124,11 +124,22 @@
 <section class="hero teaser">
   <div class="hero-body">
       <div class="container is-max-desktop">
-        <video poster="" id="tree" autoplay controls muted loop height="100%">
-          <!-- Your video here -->
-          <source src="static/videos/MCAshort.mp4"
-          type="video/mp4">
-        </video>
+        <div style="width: 90%; margin: 0 auto;">
+          <!-- Desktop (iframe) -->
+        <div class="only-desktop">
+          <iframe src="static/interactive/MCA_topic_based_no_desc.html" 
+            width="100%" 
+            height="600px" 
+            style="border: none; border-radius: 8px;">
+          </iframe>
+        </div>
+
+        <!-- Mobile (video) -->
+        <div class="only-mobile">
+          <video poster="" id="tree" autoplay controls muted loop style="width: 100%; border-radius: 8px;">
+            <source src="static/videos/MCAshort.mp4" type="video/mp4">
+          </video>
+        </div>
       <div class="box has-background-info-light has-text-centered mt-5 mb-5">
         <h2 class="title is-4 mb-0">
           <strong>How can researchers study complex, real-world digital media experiences at scale?</strong>
