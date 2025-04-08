@@ -122,20 +122,27 @@
 
 <!-- Teaser video-->
 <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/MCAshort.mp4"
-        type="video/mp4">
-      </video>
+  <div class="hero-body">
+    <div style="width: 90%; margin: 0 auto;">
+      <iframe src="static/interactive/MCA_topic_based_no_desc.html" 
+        width="100%" 
+        height="600px" 
+        style="border: none; border-radius: 8px;">
+      </iframe>
+    </div>
+      <div class="container is-max-desktop">
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <!-- Your video here -->
+          <source src="static/videos/MCAshort.mp4"
+          type="video/mp4">
+        </video>
       <div class="box has-background-info-light has-text-centered mt-5 mb-5">
         <h2 class="title is-4 mb-0">
           <strong>How can researchers study complex, real-world digital media experiences at scale?</strong>
         </h2>
       </div>
       <p class="has-text-justified">
-        We introduce the <strong>Media Content Atlas (MCA)</strong>—a <strong>customizable, AI-powered pipeline and interactive dashboard</strong> for studying digital media content across platforms at scale.  
+        We introduce the <strong>Media Content Atlas (MCA)</strong>—a <strong>customizable, AI-powered pipeline and interactive dashboard</strong> for exploring and investigating digital media content across platforms at scale.  
   Each point in the dashboard represents a <strong>single captured screen</strong>—a moment of what a participant sees and interacts with on their smartphone. 
   This data comes from <strong>1.12 million screenshots</strong> collected from <strong>112 participants</strong> over the course of <strong>one month</strong>, 
   sampled every <strong>5 seconds</strong> while screens were on. Topics are color-coded and <strong>automatically identified</strong> by MCA’s AI-driven pipeline.
