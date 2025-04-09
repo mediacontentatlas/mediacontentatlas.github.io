@@ -138,17 +138,3 @@ body {
   color: #555; /* Optional: Makes it slightly less prominent */
   font-style: italic; /* Optional: Gives a typical caption look */
 }
-
-.only-mobile {
-  display: none;
-}
-
-@media screen and (max-width: 768px) {
-  .only-desktop {
-    display: none !important;
-  }
-  .only-mobile {
-    display: block !important;
-  }
-}
-

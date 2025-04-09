@@ -123,23 +123,10 @@
 <!-- Teaser video-->
 <section class="hero teaser">
   <div class="hero-body">
+      <div style="width: 75%; margin: 0 auto;">
+          <div id="media-container"></div>
+      </div>
       <div class="container is-max-desktop">
-        <div style="width: 90%; margin: 0 auto;">
-          <!-- Desktop (iframe) -->
-        <div class="only-desktop">
-          <iframe src="static/interactive/MCA_topic_based_no_desc.html" 
-            width="100%" 
-            height="600px" 
-            style="border: none; border-radius: 8px;">
-          </iframe>
-        </div>
-
-        <!-- Mobile (video) -->
-        <div class="only-mobile">
-          <video poster="" id="tree" autoplay controls muted loop style="width: 100%; border-radius: 8px;">
-            <source src="static/videos/MCAshort.mp4" type="video/mp4">
-          </video>
-        </div>
       <div class="box has-background-info-light has-text-centered mt-5 mb-5">
         <h2 class="title is-4 mb-0">
           <strong>How can researchers study complex, real-world digital media experiences at scale?</strong>
@@ -266,7 +253,6 @@
     <div class="columns is-centered">
       <div class="column is-four-fifths has-text-centered">
         <h2 class="title is-3">Media Content Atlas Pipeline</h2>
-
         <div class="content has-text-justified mt-4">
           <p>
             MCA processes screen data <strong>scalably and securely</strong> through a four-step pipeline: embedding, clustering, retrieval, and interactive visualization. These steps allow researchers to <strong>transform raw screen data into structured, searchable, and explorable insights</strong>.
@@ -288,8 +274,6 @@
             </figure>
           </div>
         </div>
-
-
         <div class="content has-text-justified mt-4">
           <p>
             Built on <strong>open-source multimodal models</strong> (e.g., CLIP, LLaVA-One Vision), MCA requires <strong>no manual annotation</strong> and ensures <strong>data security</strong> by running on in-house servers.  
@@ -439,5 +423,41 @@
     </div>
   </div>
 </footer>
+<script>
+  function getDeviceType() {
+    const ua = navigator.userAgent;
+    const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+
+    const isMobileUA = /Mobi|Android|iPhone|iPod|Opera Mini|IEMobile/i.test(ua);
+    const isTabletUA = /iPad|Tablet|Nexus 7|Nexus 10|KFAPWI/i.test(ua);
+    const isSmallScreen = window.innerWidth <= 768;
+
+    if (isMobileUA && isSmallScreen) return 'phone';
+    if ((isTabletUA || isTouch) && window.innerWidth <= 1024) return 'tablet';
+    return 'desktop';
+  }
+
+  function renderMediaElement() {
+    const container = document.getElementById('media-container');
+    const type = getDeviceType();
+
+    if (type === 'desktop') {
+      container.innerHTML = `
+        <iframe src="static/interactive/MCA_topic_based_no_desc.html"
+          width="100%" height="500px"
+          style="border: 2px solid #eff5fb; border-radius: 10px;">
+        </iframe>
+      `;
+    } else {
+      container.innerHTML = `
+        <video poster="" id="tree" autoplay controls muted loop style="width: 100%; border-radius: 8px;">
+          <source src="static/videos/MCAshort.mp4" type="video/mp4">
+          Your device does not support video playback.
+        </video>
+      `;
+    }
+  }
+  window.addEventListener('DOMContentLoaded', renderMediaElement);
+</script>
 </body>
 </html>
