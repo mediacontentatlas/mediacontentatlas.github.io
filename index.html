@@ -450,11 +450,17 @@
       `;
     } else {
       container.innerHTML = `
-        <video poster="" id="tree" autoplay controls muted loop style="width: 100%; height="500px", border-radius: 8px;">
-          <source src="static/videos/MCAshort.mp4" type="video/mp4">
-          Your device does not support video playback.
-        </video>
+        <iframe src="static/interactive/MCA_topic_based_no_desc.html"
+          width="100%" height="500px"
+          style="border: 2px solid #eff5fb; border-radius: 10px;">
+        </iframe>
       `;
+      //container.innerHTML = `
+      //  <video poster="" id="tree" autoplay controls muted loop style="width: 100%; height="500px", border-radius: 8px;">
+      //    <source src="static/videos/MCAshort.mp4" type="video/mp4">
+      //    Your device does not support video playback.
+      //  </video>
+      //`;
     }
   }
   window.addEventListener('DOMContentLoaded', renderMediaElement);
