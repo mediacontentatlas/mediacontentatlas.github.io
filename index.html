@@ -449,28 +449,27 @@
         </div>
       </div>
     </div>
-    </div>
-  </footer>
-  <script>
-    function getDeviceType() {
-      const ua = navigator.userAgent;
-      const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  </div>
+</footer>
+<script>
+  function getDeviceType() {
+    const ua = navigator.userAgent;
+    const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
 
-      const isMobileUA = /Mobi|Android|iPhone|iPod|Opera Mini|IEMobile/i.test(ua);
-      const isTabletUA = /iPad|Tablet|Nexus 7|Nexus 10|KFAPWI/i.test(ua);
-      const isSmallScreen = window.innerWidth <= 768;
+    const isMobileUA = /Mobi|Android|iPhone|iPod|Opera Mini|IEMobile/i.test(ua);
+    const isTabletUA = /iPad|Tablet|Nexus 7|Nexus 10|KFAPWI/i.test(ua);
+    const isSmallScreen = window.innerWidth <= 768;
 
-      if (isMobileUA && isSmallScreen) return 'phone';
-      if ((isTabletUA || isTouch) && window.innerWidth <= 1024) return 'tablet';
-      return 'desktop';
-    }
+    if (isMobileUA && isSmallScreen) return 'phone';
+    if ((isTabletUA || isTouch) && window.innerWidth <= 1024) return 'tablet';
+    return 'desktop';
+  }
 
-    function renderMediaElement() {
+  function renderMediaElement() {
     const container = document.getElementById('media-container');
-    const deviceType = getDeviceType();
-    const isLandscape = window.innerWidth > window.innerHeight;
+    const type = getDeviceType();
 
-    if (deviceType === 'desktop' || isLandscape) {
+    if (type === 'desktop') {
       container.innerHTML = `
         <iframe src="static/interactive/MCA_lite.html"
           width="100%" height="500px"
@@ -478,19 +477,38 @@
         </iframe>
       `;
     } else {
-      container.innerHTML = `
-        <div style="width: 100%; padding: 2rem; text-align: center;">
-          <p class="is-size-5" style="color: #333;">
-            🔄 Please rotate your phone to <strong>landscape</strong> to explore the interactive dashboard.
-          </p>
-          <img src="static/videos/rotate.gif" alt="Rotate your phone" style="max-width: 160px; margin-top: 1rem;" />
-        </div>
-      `;
+       // For mobile and tablet devices, use a video element
+       container.innerHTML = `
+    <div style="margin: 0; padding: 0;">
+      <video
+        autoplay
+        muted
+        loop
+        playsinline
+        controls
+        style="
+          position: relative;
+          left: 0;
+          top: 0;
+          margin: 0;
+          padding: 0;
+          width: 100%;
+          height: 70vh;
+          display: block;
+          object-fit: cover;
+          border: none;
+          background-color: #000;">
+        <source src="static/videos/MCAlite_short.mp4" type="video/mp4">
+        Your device does not support video playback.
+      </video>
+      <p class="has-text-centered is-size-6 mt-3" style="color: #444;">
+        🖥️ Want to explore the dashboard yourself? The full interactive version is available on desktop!
+      </p>
+    </div>
+  `;
     }
   }
-
   window.addEventListener('DOMContentLoaded', renderMediaElement);
-  window.addEventListener('resize', renderMediaElement);
 </script>
 </body>
 </html>
