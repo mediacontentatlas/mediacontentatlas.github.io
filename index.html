@@ -479,6 +479,7 @@
     } else {
        // For mobile and tablet devices, use a video element
       container.innerHTML = `
+      <div class="container is-max-desktop">
         <video poster="" id="tree" autoplay controls muted loop style="width: 100%; height="500px", border: 2px solid #eff5fb; border-radius: 10px;">
         <source src="static/videos/MCAlite_short.mp4" type="video/mp4">
         Your device does not support video playback.
@@ -486,7 +487,8 @@
        <p class="has-text-centered is-size-6 mt-3" style="color: #444;">
         🖥️ Want to explore the dashboard yourself? The full interactive version is available on desktop!
       </p>
-      `;
+      </div>
+      `;   
     }
   }
   window.addEventListener('DOMContentLoaded', renderMediaElement);
